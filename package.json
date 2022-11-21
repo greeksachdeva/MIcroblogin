@@ -1,0 +1,25 @@
+{
+  "name": "twt-clone",
+  "version": "1.0.0",
+  "description": "```\r git init\r git add readme.md\r git commit -m \"repo initialized\"\r git branch -M main\r git remote add origin git@github.com:Mehul10/twitter-clone.git\r git push -u origin main\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehul10/twitter-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mehul10/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/Mehul10/twitter-clone#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {}
+}

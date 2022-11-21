@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script defer src="/js/jquery-3.4.1.js"></script>
+    <script defer src="/js/popper.js"></script>
+    <script defer src="/js/bootstrap.js"></script>
+    <script async defer src="/app/post.js"></script>
+    <!--Our app logic(scritps) and style-->
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-group my-3 mx-3" style="width: 1400px">
+        <span class="input-group-text" id="basic-addon1">Title</span>
+        <input id="postTitle" type="text" class="form-control mx-1" placeholder="Title" aria-label="Username" aria-describedby="basic-addon1" >
+    </div>
+    <div class="form-floating my-3 mx-3">
+        <textarea id="postText" class="form-control" placeholder="What's on your mind?" id="floatingTextarea2" style="width: 1400px; height: 400px"></textarea>
+        <label for="floatingTextarea2"></label>
+      </div>
+      <button type="button" id="submitBtn" class="btn btn-success mx-3">Submit</button>
+</body>
+</html>
