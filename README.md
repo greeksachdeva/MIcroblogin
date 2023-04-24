@@ -17,9 +17,9 @@ mysql -u root -p
 
 create database twitter;
 
-create user mehhul indentified with mysql_native_password by 'mehhpass';
+ CREATE USER 'greek'@'localhost' IDENTIFIED BY 'greek123';
 
-grant all privileges on twitter.* to mehhul;
+GRANT ALL ON *.* TO 'greek'@'localhost';
 
 flush privileges;
 ```

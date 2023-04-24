@@ -1,6 +1,6 @@
 $(() => {
   $("#navbar").load("../components/navbar.html", () => {
-    login("mehhul");
+    login("greek");
     //console.log(window.currentuser.username)
   }); //login function runs only when the navbar is loaded otherwise the nav-username would be altered even before it would've been created
   $("#footer").load("../components/footer.html");

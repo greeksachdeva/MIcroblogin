@@ -1,0 +1,9 @@
+backend focused project
+for frontend we used bootstrap
+we used express as much easy compared to node
+
+1 server.js
+2 routes/users/index.js
+3 routes/posts/index.js
+4 db/models.js
+5 contorllers/user.js
