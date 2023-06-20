@@ -1,10 +1,17 @@
 // const { Sequelize } = require('sequelize')
 const Sequelize = require("sequelize");
 const db = new Sequelize({
+	// dialect: "mysql",
+	// database: "twitter",
+	// username: "greek",
+	// password: "greek123",
+
 	dialect: "mysql",
-	database: "twitter",
-	username: "greek",
-	password: "greek123",
+	database: process.env.MYSQL_ADDON_DB,
+	username: process.env.MYSQL_ADDON_USER,
+	password: process.env.MYSQL_ADDON_PASSWORD,
+	port: process.env.MYSQL_ADDON_PORT,
+	host: process.env.MYSQL_ADDON_HOST,
 });
 const colid = {
 	type: Sequelize.DataTypes.INTEGER,
@@ -38,7 +45,7 @@ const Comments = db.define("comment", {
 		type: Sequelize.DataTypes.TEXT("tiny"),
 	},
 });
-Users.hasMany(Posts);       
+Users.hasMany(Posts);
 Posts.belongsTo(Users);
 
 Posts.hasMany(Comments);
