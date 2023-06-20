@@ -1,5 +1,8 @@
 const express=require('express')
-const app=express()
+const app = express()
+
+const PORT = process.env.PORT || 3030;
+
 app.use(express.json())          //to support JSON-encoded bodies
 app.use(express.urlencoded({extended: true}))          //to support URL-encoded bodies
 // const models=require('./db/models')
@@ -21,4 +24,9 @@ db.sync() //use {force:true} to create the table again
 	.catch((err) => {
 		console.error(new Error("Could not start database"));
 		console.error(err);
+	});
+
+
+	app.listen(PORT, () => {
+		console.log(`server started on port ${PORT}`);
 	});
